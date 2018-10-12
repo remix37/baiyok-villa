@@ -2,10 +2,11 @@
 title: Baiyok Villa
 ---
 
-.container.mt-30
+.container
   .row
-    .col-md-auto
-      %ul.list-group.list-group-flush
+    .col-md-auto.navfix.d-none.d-lg-block
+
+      %ul.list-group.list-group-flush.sticky-top.mt-30
         %li.list-group-item 1
         %li.list-group-item 2
         %li.list-group-item 3
@@ -13,18 +14,92 @@ title: Baiyok Villa
         %li.list-group-item 5
 
     .col
-      .row.villa
-        .col-md-auto.align-self-end.big-title{:style => "width: 400px;"}
-          %h1.text-right Une villa  luxuriente  près de la mer de Patong
-        .col.align-self-end
+      %section
+        .row.villa
+          .col-md-auto.align-self-end.big-title
+            %h1.text-right Une villa  luxuriente  près de la mer de Patong
+          .w-100.d-sm-block.d-md-none
+          .col.align-self-end
 
-          .row
-            .col
-              %p picto
-            .col
-              %p picto
-            .col
-              %p picto
-            .w-100
-            .col.discover
-              %p.text-right.pt-15.pb-15 Découvrir
+            .row
+              .col.pl-30
+                .row
+                  .col-xs-auto
+                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_villa-white.svg')}/
+                  .w-100.d-sm-block.d-md-none
+                  .col
+                    %p.mt-15.white
+                      Une résidence de 1100 m<sup>2</sup>
+              .col
+                .row
+                  .col-xs-auto
+                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_swimming-pool-white.svg')}/
+                  .w-100.d-sm-block.d-md-none
+                  .col
+                    %p.mt-15.white Piscine à débordement de 100 m<sup>3</sup>
+              .col.pr-60
+                .row
+                  .col-xs-auto
+                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_staff-white.svg')}/
+                  .w-100.d-sm-block.d-md-none
+                  .col
+                    %p.mt-15.white Une équipe régulièrement présente en cas de besoin
+
+              .w-100
+              .col.discover
+                %p.text-right.pt-15.pb-15 Découvrir
+
+      %section
+        .row
+          .col-md-auto
+            %img.img-fluid.ml-30.mr-30{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x"}/
+          .col
+            %h1 La localisation
+
+            %p La villa se situe à 5 minutes de Patong, l’une des villes les plus touristiques de Thailande où de nombreuses activités (plages, excursions, croisières) sont disponibles à proximité.
+
+            .row
+              .col-xs-auto
+                %img.img-fluid.icon-bv{:src => image_path('Icons/100_car.svg')}/
+              .col.col-xl-8
+                %p.mt-15 Un chauffeur vous accueillera à la sortie de l'aéroport pour vous améner à la résidence.
+
+          .col-md-auto.spacer.d-none.d-lg-block
+
+      %section
+        .row
+          .col
+            %h1 La villa
+            %p La propriété, d’une superficie de 1100 m2, propose une magnifique vue sur toute la baie de Patong. Situé sur les hautes montagnes, la résidence est très calme et sereine. Notre personnel est régulièrement disponible pour votre plus grand confort.
+
+            .row
+              .col-xs-auto
+                %img.img-fluid.icon-bv{:src => image_path('Icons/100_villa.svg')}/
+              .col
+                %p.mt-15
+                  Résidence de 1100 m<sup>2</sup>
+
+              .w-100.d-md-none.d-lg-block.d-xl-none
+
+              .col-xs-auto
+                %img.img-fluid.icon-bv{:src => image_path('Icons/100_swimming-pool.svg')}/
+              .col
+                %p.mt-15
+                  Piscine à débordement de 100 m<sup>3</sup>
+
+              .w-100
+
+              .col-xs-auto
+                %img.img-fluid.icon-bv{:src => image_path('Icons/100_transat.svg')}/
+              .col
+                %p.mt-15 3 grandes terrasses
+
+              .w-100.d-md-none.d-lg-block.d-xl-none
+
+              .col-xs-auto
+                %img.img-fluid.icon-bv{:src => image_path('Icons/100_garden.svg')}/
+              .col
+                %p.mt-15 Un grand jardin
+
+          .col.d-none.d-lg-block
+            %img.img-fluid{:src => image_path('swimming-pool.png'), :srcset => " #{image_path('swimming-pool@2x.png')} 2x, #{image_path('swimming-pool.png')} 1x"}/
