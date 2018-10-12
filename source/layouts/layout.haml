@@ -7,6 +7,11 @@
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || "Middleman"
     = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
   %body
+
+    = partial "partials/header.html.haml"
+
     = yield
+
+    = partial "partials/footer.html.haml"
+    = javascript_include_tag "site"

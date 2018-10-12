@@ -1,5 +1,24 @@
 @import "../libs/boostrap/scss/bootstrap.scss";
+@import "./mixins.scss";
+@import "./retina.scss";
 
 body {
-  background: #E7E7E7;
+  // background: #E7E7E7;
+}
+
+.villa{
+  min-height: 400px;
+  height: 80vh;
+  max-height: 640px;
+
+  @include retina('../images/villa.png', 2, cover, center center no-repeat);
+}
+
+.big-title {
+  background-color: $white-color;
+  padding: 30px
+}
+
+.discover{
+  background-color: $white-color;
 }
