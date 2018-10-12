@@ -1,0 +1,26 @@
+{
+  "name": "baiyok-villa",
+  "homepage": "https://github.com/remix37/baiyok-villa",
+  "authors": [
+    "Rigault Rémy <r.rigault@me.com>"
+  ],
+  "description": "Website of Baiyok Villa",
+  "main": "",
+  "keywords": [
+    "Villa",
+    "Patong",
+    "Thailand"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "^4.1.3"
+  }
+}
