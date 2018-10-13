@@ -1,0 +1,68 @@
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-color: $white;
+}
+
+.navbar-brand {
+  background-color: $bv-color;
+  padding: 20px;
+  min-width: $spacer-bv * 1.5;
+}
+
+.logo {
+  height: 30px;
+}
+
+
+.nav-sticky {
+  width: $spacer-bv;
+  text-align: center;
+  position: relative;
+
+  ul {
+    position: -webkit-sticky;
+    top: 80px;
+    @include vertical-align(sticky);
+    font-family: 'Playfair Display', serif;
+  }
+
+  li {
+    a {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $black;
+      span {
+        opacity: 0;
+        display: block;
+        font-size: 0.8rem;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $black;
+        margin: 10px auto 20px;
+      }
+    }
+
+    &:last-child a{
+      &:after {
+       display: none;
+      }
+    }
+
+  }
+
+  a.active {
+    font-weight: 400;
+
+    span {
+      opacity: 1;
+    }
+
+  }
+}

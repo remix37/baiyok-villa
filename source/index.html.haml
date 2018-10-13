@@ -4,17 +4,11 @@ title: Baiyok Villa
 
 .container
   .row
-    .col-md-auto.nav-sticky.d-none.d-lg-block
 
-      %ul.list-group.list-group-flush.sticky-top.mt-5
-        %li.list-group-item 1
-        %li.list-group-item 2
-        %li.list-group-item 3
-        %li.list-group-item 4
-        %li.list-group-item 5
+    = partial "partials/nav-sticky.html.haml"
 
     .col
-      %section
+      %section#Home
         .row.villa
           .col-md-auto.align-self-end.big-title
             %h1.text-right Une villa  luxuriente  près de la mer de Patong
@@ -31,7 +25,7 @@ title: Baiyok Villa
                 %img.icon-bv.float-xl-left{:src => image_path('Icons/100_swimming-pool-white.svg')}/
                 .service
                   %p.white Piscine à débordement de 100 m<sup>3</sup>
-              .col.pr-60
+              .col.pr-lg-5
 
                 %img.icon-bv.float-xl-left{:src => image_path('Icons/100_staff-white.svg')}/
                 .service
@@ -41,7 +35,7 @@ title: Baiyok Villa
               .col.discover
                 %p.text-right.py-3 Découvrir
 
-      %section
+      %section#Localisation
         .row
           .col-md-auto.px-5
             %img.img-fluid.mx-auto.d-block{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x"}/
@@ -57,7 +51,7 @@ title: Baiyok Villa
 
           .col-md-auto.spacer.d-none.d-lg-block
 
-      %section
+      %section#Villa
         .row
           .col.section-inner
             %h1 La villa
@@ -92,7 +86,7 @@ title: Baiyok Villa
                   %p Un grand jardin
 
 
-            %p.mt-60
+            %p.mt-5
               %a.btn.btn-link.btn-bv{:href => "/"} Gallerie
 
           .col.d-none.d-lg-block
@@ -100,13 +94,13 @@ title: Baiyok Villa
               %img.img-fluid{:src => image_path('swimming-pool.png'), :srcset => " #{image_path('swimming-pool@2x.png')} 2x, #{image_path('swimming-pool.png')} 1x"}/
 
         .row.d-none.d-lg-block
-          .col.offset-md-4
+          .col.col-md-8.offset-md-4
             .img-inside
               %img.img-fluid{:src => image_path('inside-villa.png'), :srcset => " #{image_path('inside-villa@2x.png')} 2x, #{image_path('inside-villa.png')} 1x"}/
 
 
-      %section.inside-villa
-        %h1.text-center.white À l'intérieur
+      %section.inside-villa#InsideVilla
+        %h1.text-center.white.pb-3 À l'intérieur
         .row
           .col
             %img.icon-bv.float-left{:src => image_path('Icons/100_bath.svg')}/
@@ -157,8 +151,8 @@ title: Baiyok Villa
 
           .col-md-2.col-xl-3
 
-      %section.services
-        %h1.text-center Les services durant votre séjour
+      %section.services#Services
+        %h1.text-center.pb-3 Les services durant votre séjour
         .row
           .col
             %img.icon-bv.float-left{:src => image_path('Icons/100_staff.svg')}/
@@ -193,8 +187,8 @@ title: Baiyok Villa
                 %span.option Option
                 Draps et oreillers supplémentaires
 
-      %section.price-section
-        %h1.text-center.white Le prix
+      %section.price-section#Price
+        %h1.text-center.white.pb-3 Le prix
         .row
           .col
             .block-price

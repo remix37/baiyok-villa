@@ -1,6 +1,8 @@
-%nav.navbar.navbar-expand-lg.navbar-light.bg-light
+%nav.navbar.navbar-expand-lg.navbar-light.sticky-top
   .container
-    %a.navbar-brand{:href => "#"} Baiyok Villa
+    %a.navbar-brand{:href => "#"}
+      %img.logo{:src => image_path('logo-baiyok-villa.svg')}/
+
     %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse

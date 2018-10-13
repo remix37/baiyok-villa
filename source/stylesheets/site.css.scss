@@ -3,18 +3,11 @@
 @import "./mixins.scss";
 @import "../libs/boostrap/scss/bootstrap.scss";
 @import "./retina.scss";
+@import "./nav.scss";
 @import "./global.scss";
 
-
-$spacer : 150px;
-
-.nav-sticky {
-  width: $spacer;
-  text-align: center;
-}
-
 .spacer {
-  width: $spacer;
+  width: $spacer-bv;
 }
 
 // Top section
@@ -75,13 +68,13 @@ $spacer : 150px;
   background-color: $white;
   padding: 30px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .date-booking {
   font-size: 1rem;
   color: $bv-color;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 30px;
 }
 
@@ -92,4 +85,13 @@ $spacer : 150px;
     font-size: 1rem;
     display: block;
   }
+}
+
+// Footer
+
+.footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
 }
