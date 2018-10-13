@@ -3,21 +3,13 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 
 // Colors
 $black : #000 !default;
-$bv-color: #2b4dd5;
+$bv-color: #4A90E2;
+$bv-color-alternative: #8B572A;
 
-
-$loop-list1: m p;
-$loop-list1-keys: margin padding;
-$loop-list2: t b l r;
-$loop-list2-keys: top bottom left right;
-$loop-length: 20;
-$loop-step: 5;
-@each $key1 in $loop-list1 {
-	@each $key2 in $loop-list2 {
-		@for $i from 0 through $loop-length {
-			.#{$key1}#{$key2}-#{$i*$loop-step} {
-				#{nth($loop-list1-keys,index($loop-list1, $key1))}-#{nth($loop-list2-keys,index($loop-list2, $key2))}: ($loop-step * $i * 1px) !important
-			}
-		}
-	}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

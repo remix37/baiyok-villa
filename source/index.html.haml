@@ -4,9 +4,9 @@ title: Baiyok Villa
 
 .container
   .row
-    .col-md-auto.navfix.d-none.d-lg-block
+    .col-md-auto.nav-sticky.d-none.d-lg-block
 
-      %ul.list-group.list-group-flush.sticky-top.mt-30
+      %ul.list-group.list-group-flush.sticky-top.mt-5
         %li.list-group-item 1
         %li.list-group-item 2
         %li.list-group-item 3
@@ -22,84 +22,200 @@ title: Baiyok Villa
           .col.align-self-end
 
             .row
-              .col.pl-30
-                .row
-                  .col-xs-auto
-                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_villa-white.svg')}/
-                  .w-100.d-sm-block.d-md-none
-                  .col
-                    %p.mt-15.white
-                      Une résidence de 1100 m<sup>2</sup>
-              .col
-                .row
-                  .col-xs-auto
-                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_swimming-pool-white.svg')}/
-                  .w-100.d-sm-block.d-md-none
-                  .col
-                    %p.mt-15.white Piscine à débordement de 100 m<sup>3</sup>
-              .col.pr-60
-                .row
-                  .col-xs-auto
-                    %img.img-fluid.icon-bv{:src => image_path('Icons/100_staff-white.svg')}/
-                  .w-100.d-sm-block.d-md-none
-                  .col
-                    %p.mt-15.white Une équipe régulièrement présente en cas de besoin
+              .col.pl-lg-5
+                %img.icon-bv.float-xl-left{:src => image_path('Icons/100_villa-white.svg')}/
+                .service
+                  %p.white Une résidence de 1100 m<sup>2</sup>
 
-              .w-100
+              .col
+                %img.icon-bv.float-xl-left{:src => image_path('Icons/100_swimming-pool-white.svg')}/
+                .service
+                  %p.white Piscine à débordement de 100 m<sup>3</sup>
+              .col.pr-60
+
+                %img.icon-bv.float-xl-left{:src => image_path('Icons/100_staff-white.svg')}/
+                .service
+                  %p.white Une équipe présente en cas de besoin
+
+              .w-100.mt-3
               .col.discover
-                %p.text-right.pt-15.pb-15 Découvrir
+                %p.text-right.py-3 Découvrir
 
       %section
         .row
-          .col-md-auto
-            %img.img-fluid.ml-30.mr-30{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x"}/
-          .col
+          .col-md-auto.px-5
+            %img.img-fluid.mx-auto.d-block{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x"}/
+          .col.section-inner
             %h1 La localisation
 
             %p La villa se situe à 5 minutes de Patong, l’une des villes les plus touristiques de Thailande où de nombreuses activités (plages, excursions, croisières) sont disponibles à proximité.
 
-            .row
-              .col-xs-auto
-                %img.img-fluid.icon-bv{:src => image_path('Icons/100_car.svg')}/
-              .col.col-xl-8
-                %p.mt-15 Un chauffeur vous accueillera à la sortie de l'aéroport pour vous améner à la résidence.
+            %img.icon-bv.float-left{:src => image_path('Icons/100_car.svg')}/
+            .service
+              %p Un chauffeur vous accueillera à la sortie de l'aéroport pour vous améner à la résidence.
+
 
           .col-md-auto.spacer.d-none.d-lg-block
 
       %section
         .row
-          .col
+          .col.section-inner
             %h1 La villa
-            %p La propriété, d’une superficie de 1100 m2, propose une magnifique vue sur toute la baie de Patong. Situé sur les hautes montagnes, la résidence est très calme et sereine. Notre personnel est régulièrement disponible pour votre plus grand confort.
+            %p La propriété, d’une superficie de 1100 m<sup>2</sup>, propose une magnifique vue sur toute la baie de Patong. Situé sur les hautes montagnes, la résidence est très calme et sereine. Notre personnel est régulièrement disponible pour votre plus grand confort.
 
             .row
-              .col-xs-auto
-                %img.img-fluid.icon-bv{:src => image_path('Icons/100_villa.svg')}/
               .col
-                %p.mt-15
-                  Résidence de 1100 m<sup>2</sup>
+                %img.icon-bv.float-left{:src => image_path('Icons/100_villa.svg')}/
+                .service
+                  %p Résidence de 1100 m<sup>2</sup>
 
-              .w-100.d-md-none.d-lg-block.d-xl-none
+              .w-100.d-block.d-sm-none.d-lg-block.d-xl-none
 
-              .col-xs-auto
-                %img.img-fluid.icon-bv{:src => image_path('Icons/100_swimming-pool.svg')}/
               .col
-                %p.mt-15
-                  Piscine à débordement de 100 m<sup>3</sup>
+                %img.icon-bv.float-left{:src => image_path('Icons/100_swimming-pool.svg')}/
+                .service
+                  %p Piscine à débordement de 100 m<sup>3</sup>
 
               .w-100
 
-              .col-xs-auto
-                %img.img-fluid.icon-bv{:src => image_path('Icons/100_transat.svg')}/
               .col
-                %p.mt-15 3 grandes terrasses
+                %img.icon-bv.float-left{:src => image_path('Icons/100_transat.svg')}/
+                .service
+                  %p 3 grandes terrasses
 
-              .w-100.d-md-none.d-lg-block.d-xl-none
+              .w-100.d-block.d-sm-none.d-lg-block.d-xl-none
 
-              .col-xs-auto
-                %img.img-fluid.icon-bv{:src => image_path('Icons/100_garden.svg')}/
+
               .col
-                %p.mt-15 Un grand jardin
+                %img.icon-bv.float-left{:src => image_path('Icons/100_garden.svg')}/
+                .service
+                  %p Un grand jardin
+
+
+            %p.mt-60
+              %a.btn.btn-link.btn-bv{:href => "/"} Gallerie
 
           .col.d-none.d-lg-block
-            %img.img-fluid{:src => image_path('swimming-pool.png'), :srcset => " #{image_path('swimming-pool@2x.png')} 2x, #{image_path('swimming-pool.png')} 1x"}/
+            .img-pool
+              %img.img-fluid{:src => image_path('swimming-pool.png'), :srcset => " #{image_path('swimming-pool@2x.png')} 2x, #{image_path('swimming-pool.png')} 1x"}/
+
+        .row.d-none.d-lg-block
+          .col.offset-md-4
+            .img-inside
+              %img.img-fluid{:src => image_path('inside-villa.png'), :srcset => " #{image_path('inside-villa@2x.png')} 2x, #{image_path('inside-villa.png')} 1x"}/
+
+
+      %section.inside-villa
+        %h1.text-center.white À l'intérieur
+        .row
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_bath.svg')}/
+            .service
+              %p.white 4 salles de bain et 5 toilettes
+
+          .w-100.d-block.d-md-none
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_bed.svg')}/
+            .service
+              %p.white 4 chambres avec lits double
+
+          .w-100.d-lg-block.d-xl-none
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_kitchen.svg')}/
+            .service
+              %p.white Une cuisine complète
+
+          .w-100.d-block.d-sm-block.d-md-none.d-xl-block
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_wifi.svg')}/
+            .service
+              %p.white Internet en wifi
+
+          .w-100.d-block.d-sm-block.d-md-block.d-xl-none
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_tv.svg')}/
+            .service
+              %p.white Chaines satellite étrangères
+
+          .w-100.d-block.d-sm-block.d-md-none
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_safebox.svg')}/
+            .service
+              %p.white Alarme et coffre-fort
+
+          .w-100
+
+          .col.offset-md-2.offset-xl-3
+            %img.icon-bv.float-left{:src => image_path('Icons/100_air-conditioner.svg')}/
+            .service
+              %p.white Air climatisée dans toutes les chambres
+
+          .col-md-2.col-xl-3
+
+      %section.services
+        %h1.text-center Les services durant votre séjour
+        .row
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_staff.svg')}/
+            .service
+              %p Service de nettoyage, jardinier et maintenance de la piscine inclus
+
+          .w-100.d-block.d-md-none
+
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_clothes.svg')}/
+            .service
+              %p
+                %span.option Option
+                Nettoyage des vêtements et autres affaires textiles
+
+          .w-100
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_key.svg')}/
+            .service
+              %p
+                %span.option Option
+                Location d'un voiture et/ou d'une ou plusieurs motos
+
+          .w-100.d-block.d-md-none
+
+          .col
+            %img.icon-bv.float-left{:src => image_path('Icons/100_pillow.svg')}/
+            .service
+              %p
+                %span.option Option
+                Draps et oreillers supplémentaires
+
+      %section.price-section
+        %h1.text-center.white Le prix
+        .row
+          .col
+            .block-price
+              %h2 Haute Saison
+              %p.date-booking
+                1<sup>er</sup> octobre
+                %img{:src => image_path('arrow.svg')}/
+                31 avril
+              %p.price
+                300 €
+                %small par jour
+
+          .w-100.d-block.d-sm-none
+
+          .col
+            .block-price
+              %h2 Basse Saison
+              %p.date-booking
+                1<sup>er</sup> mai
+                %img{:src => image_path('arrow.svg')}/
+                31 septembre
+              %p.price
+                200 €
+                %small par jour
