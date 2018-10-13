@@ -1,0 +1,14 @@
+{
+  "name": "smooth-scroll.polyfills.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"190a-+6I2UxYtcrAwdDHUG3b9PgyQwLY\"",
+    "Content-Length": "2645",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"190a-+6",
+  "main": "index.js",
+  "_source": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
+  "_direct": true
+}

@@ -1,0 +1,14 @@
+{
+  "name": "popper.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"5b644af9-5038\"",
+    "Last-Modified": "Fri, 03 Aug 2018 12:30:49 GMT",
+    "Content-Type": "application/javascript"
+  },
+  "_release": "e-tag:W/\"5b644af",
+  "main": "index.js",
+  "_source": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js",
+  "_direct": true
+}
