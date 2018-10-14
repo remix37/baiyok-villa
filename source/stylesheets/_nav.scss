@@ -1,13 +1,14 @@
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
-
   background-color: $white;
+  box-shadow: 0 2px 4px rgba($black, 0.15);
+  color: red;
 }
 
 .navbar-brand {
   background-color: $bv-color;
-  padding: 20px;
+  padding: 25px;
   min-width: $spacer-bv * 1.5;
 }
 
@@ -33,10 +34,14 @@
       font-size: 1.5rem;
       font-weight: 400;
       color: $black;
+      text-decoration: none;
       span {
         opacity: 0;
         display: block;
         font-size: 0.8rem;
+        position: relative;
+        bottom: 5px;
+        transition: all .3s ease-out;
       }
       &:after {
         content: "";
@@ -62,6 +67,8 @@
 
     span {
       opacity: 1;
+      bottom: 0;
+      transition: all .3s ease-out;
     }
 
   }

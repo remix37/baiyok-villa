@@ -16,6 +16,7 @@
   min-height: 400px;
   height: 80vh;
   max-height: 640px;
+  // width: 100%;
 
   @include retina('../images/villa.png', 2, cover, center center no-repeat);
 }
@@ -24,6 +25,7 @@
   background-color: $white;
   padding: 0 30px;
   width: 270px;
+  height: 212px;
 }
 
 .discover{
