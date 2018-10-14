@@ -6,7 +6,6 @@ $black : #000 !default;
 $bv-color: #4A90E2;
 $bv-color-alternative: #8B572A;
 
-// Mixins
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
