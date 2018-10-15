@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>envelope - simple-line-icons</title>
+    <title>Icons/envelope</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="simple-line-icons" font-size="20" font-weight="normal">
-        <g id="Desktop-HD" transform="translate(-665.000000, -4521.000000)" fill="#FFFFFF">
-            <g id="Nous-contacter" transform="translate(0.000000, 3839.000000)">
-                <g id="Group-8" transform="translate(635.000000, 593.000000)">
-                    <g id="Group-7" transform="translate(30.000000, 86.000000)">
-                        <text id="envelope---simple-line-icons">
-                            <tspan x="0" y="19"></tspan>
-                        </text>
-                    </g>
-                </g>
-            </g>
-        </g>
+    <g id="Icons/envelope" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.188,9.25 L6.895,9.25 C6.791,9.25 6.687,9.257 6.583,9.27 L15,15.988 L23.438,9.25 L7.188,9.25 Z M23.438,20.5 C23.607,20.5 23.702,20.386 23.721,20.158 C23.741,19.931 23.75,19.731 23.75,19.563 L23.75,10.617 L15.411,17.277 C15.345,17.329 15.281,17.368 15.215,17.395 C15.15,17.421 15.079,17.434 15,17.434 C14.922,17.434 14.851,17.421 14.786,17.395 C14.72,17.368 14.656,17.329 14.59,17.277 L6.251,10.617 L6.251,19.563 C6.251,19.731 6.365,19.931 6.592,20.158 C6.82,20.386 7.019,20.5 7.188,20.5 L23.438,20.5 Z M24.981,9.406 C24.994,9.433 25,9.458 25,9.484 L25,9.562 L25,19.563 C25,20.083 24.871,20.578 24.61,21.047 C24.349,21.516 23.959,21.75 23.438,21.75 L7.188,21.75 C6.667,21.75 6.172,21.516 5.704,21.047 C5.235,20.578 5,20.083 5,19.563 L5,9.562 L5,9.484 C5,9.458 5.007,9.433 5.02,9.406 C4.995,9.315 4.995,9.228 5.02,9.143 C5.046,9.058 5.091,8.977 5.157,8.898 C5.169,8.886 5.183,8.869 5.196,8.85 C5.209,8.83 5.228,8.813 5.254,8.801 C5.45,8.54 5.726,8.342 6.084,8.205 C6.443,8.068 6.81,8 7.188,8 L23.438,8 C23.855,8 24.19,8.088 24.444,8.264 C24.698,8.439 24.864,8.703 24.942,9.055 C24.968,9.106 24.984,9.162 24.991,9.221 C24.998,9.279 24.994,9.341 24.981,9.406 Z" id="Fill-1" fill="#FFFFFF"></path>
     </g>
 </svg>

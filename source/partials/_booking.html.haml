@@ -1,0 +1,16 @@
+#Booking.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "ModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-lg.modal-dialog-centered{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5#ModalLabel.modal-title Demande de réservation
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        .container-fluid
+          .row
+            .col
+              .form-group
+                %input.form-control{:placeholder => "placeholder", :type => "text"}/
+
+      .modal-footer
+        %button.btn.btn-link.btn-bv{"data-dismiss" => "modal", :type => "button"} Fermer

@@ -107,13 +107,19 @@
   margin-top: 30px;
 }
 
+.form-control {
+  box-shadow: 0 1px 0 #E7E7E7;
+}
+
 .informations {
   background-color: $bv-color;
   padding: 30px 30px 15px;
   color: $white;
 
   img{
-    margin-right: 10px
+    margin-right: 10px;
+    position: relative;
+    bottom: 5px;
   }
 
   span, a{
@@ -154,6 +160,12 @@
   }
 }
 
+// Modal
+
+.modal-footer {
+  justify-content: normal;
+}
+
 // Footer
 
 .footer {
@@ -171,7 +183,7 @@
   height: 0%;
 }
 
-.show {
+.showImages {
   height: 100%;
 
   transition: all 2000ms cubic-bezier(0.800, 0.000, 0.200, 1.000); /* custom */

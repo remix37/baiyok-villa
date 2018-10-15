@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>map - simple-line-icons</title>
+    <title>Icons/map</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="simple-line-icons" font-size="20" font-weight="normal">
-        <g id="Desktop-HD" transform="translate(-665.000000, -4458.000000)" fill="#FFFFFF">
-            <g id="Nous-contacter" transform="translate(0.000000, 3839.000000)">
-                <g id="Group-8" transform="translate(635.000000, 593.000000)">
-                    <g id="Group-6" transform="translate(30.000000, 26.000000)">
-                        <text id="map---simple-line-icons">
-                            <tspan x="0" y="19"></tspan>
-                        </text>
-                    </g>
-                </g>
-            </g>
-        </g>
+    <g id="Icons/map" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.75,23.301 L23.75,8.731 L18.75,6.582 L18.75,21.426 L23.75,23.301 Z M12.5,8.516 L12.5,23.418 L17.5,21.426 L17.5,6.563 L12.5,8.516 Z M6.25,6.68 L6.25,21.367 L11.25,23.399 L11.25,8.516 L6.25,6.68 Z M24.395,7.617 C24.563,7.669 24.707,7.771 24.824,7.92 C24.941,8.07 25,8.236 25,8.418 L25,24.434 C25,24.577 24.958,24.695 24.873,24.785 C24.788,24.876 24.681,24.922 24.551,24.922 C24.524,24.922 24.499,24.919 24.473,24.912 C24.446,24.905 24.42,24.903 24.395,24.903 L18.125,22.442 L11.895,24.961 L5.605,22.481 C5.436,22.429 5.293,22.327 5.176,22.178 C5.059,22.029 5,21.863 5,21.68 L5,5.469 C5,5.325 5.042,5.212 5.127,5.127 C5.211,5.042 5.319,5 5.449,5 L5.527,5 C5.553,5 5.579,5.007 5.605,5.02 L11.895,7.481 L18.125,5.02 L24.395,7.617 Z" id="Fill-1" fill="#FFFFFF"></path>
     </g>
 </svg>
