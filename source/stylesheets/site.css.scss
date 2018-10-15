@@ -97,6 +97,35 @@
   }
 }
 
+// Form
+
+.form-bv {
+  background-color: #E7E7E7;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.informations {
+  background-color: $bv-color;
+  padding: 30px 30px 15px;
+  position: relative;
+  color: $white;
+  bottom: 30px;
+
+  img{
+    margin-right: 10px
+  }
+
+  span, a{
+    overflow: auto;
+    display: block;
+  }
+
+  a{
+    color: $white;
+  }
+}
+
 // Footer
 
 .footer {

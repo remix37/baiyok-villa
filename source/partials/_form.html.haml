@@ -1,0 +1,40 @@
+%section#form
+
+  %h1.text-center Nous contacter
+
+  .row
+    .col-7.offset-2
+      %form.form-bv
+        .row
+          .col
+            .form-group
+              %input.form-control{:placeholder => "Nom", :type => "text"}/
+
+          .col
+            .form-group
+              %input.form-control{:placeholder => "Prénom", :type => "text"}/
+
+        .form-group
+          %input.form-control{:placeholder => "Email", :type => "email"}/
+
+        .form-group
+          %textarea.form-control{:placeholder => "Message", :rows => "3"}
+
+        %a.btn.btn-link.btn-bv{:href => "/"} Envoyer
+
+    .col-3
+
+  .row
+
+    .col-5.offset-5
+
+      .informations
+
+        %p
+          %img.float-left{:src => image_path('map.svg')}/
+          %span 40- 47/1, Hasib Pee Road, Patong, Kathu, Phuket, 83000 Plage de Patong
+        %p
+          %img.float-left{:src => image_path('envelope.svg')}/
+          %a{:href => "mailto:richard.rigault@gmail.com"} richard.rigault@gmail.com
+
+    .col-2

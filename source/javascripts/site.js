@@ -82,6 +82,6 @@ function animation(){
 }
 
 $(document).ready(function(){
-	// animation();
+	animation();
 	baguetteBox.run('.gallery');
 });

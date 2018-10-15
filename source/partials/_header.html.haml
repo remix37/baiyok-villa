@@ -1,6 +1,6 @@
 %nav.navbar.navbar-expand-lg.navbar-light.sticky-top
   .container
-    %a.navbar-brand{:href => "#"}
+    %a.navbar-brand{:href => "./"}
       %img.logo{:src => image_path('logo-baiyok-villa.svg')}/
 
     %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
@@ -11,5 +11,5 @@
           %a.nav-link{:href => "#"}
             Demande de réservation
         %li.nav-item
-          %a.nav-link{:href => "#"}
+          %a.nav-link{"datascroll" => "", :href => "#form"}
             Contact

@@ -11,18 +11,26 @@
         .col.mb-4
           %a{:href => image_path('villa.png')}
             %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
-        .col.mb-4
-          %a{:href => image_path('villa.png')}
-            %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
 
-        .w-100
+        .w-100.d-block.d-lg-none
 
         .col.mb-4
           %a{:href => image_path('villa.png')}
             %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
+
+        .w-100.d-none.d-md-none.d-lg-block
+
+        .col.mb-4
+          %a{:href => image_path('villa.png')}
+            %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
+
+        .w-100.d-block.d-lg-none
+
         .col.mb-4
           %a{:href => image_path('villa.png')}
             %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
         .col.mb-4
           %a{:href => image_path('villa.png')}
             %img.img-fluid{:alt => "First image", :src => image_path('villa@2x.png')}/
+
+  = partial "partials/form.html"
