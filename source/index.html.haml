@@ -93,12 +93,12 @@ title: Baiyok Villa
               %a.btn.btn-link.btn-bv{:href => "/"} Gallerie
 
           .col.d-none.d-lg-block
-            .img-pool
+            .img-villa.hideme
               %img.img-fluid{:src => image_path('swimming-pool.png'), :srcset => " #{image_path('swimming-pool@2x.png')} 2x, #{image_path('swimming-pool.png')} 1x"}/
 
-        .row.d-none.d-lg-block
-          .col.col-md-8.offset-md-4
-            .img-inside
+        .row
+          .col.col-md-8.offset-md-4.d-none.d-lg-block
+            .img-villa.img-inside.hideme
               %img.img-fluid{:src => image_path('inside-villa.png'), :srcset => " #{image_path('inside-villa@2x.png')} 2x, #{image_path('inside-villa.png')} 1x"}/
 
 

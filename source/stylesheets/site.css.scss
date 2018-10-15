@@ -104,3 +104,19 @@
   line-height: 60px;
   background-color: #f5f5f5;
 }
+
+.img-villa {
+  overflow: hidden;
+}
+
+.hideme {
+  height: 0%;
+}
+
+.show {
+  height: 100%;
+
+  transition: all 2000ms cubic-bezier(0.800, 0.000, 0.200, 1.000); /* custom */
+  transition-timing-function: cubic-bezier(0.800, 0.000, 0.200, 1.000); /* custom */
+  transition-delay: 1.5s;
+}
