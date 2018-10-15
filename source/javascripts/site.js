@@ -40,7 +40,7 @@ function animation(){
 
 	tl.from($('.nav-sticky'), 1, {
 		autoAlpha: 0
-	});
+	}, "+=0.5");
 
 	tl.from($('.villa'), 1.5, {
 		width: 0,
