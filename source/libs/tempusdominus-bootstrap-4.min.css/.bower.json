@@ -1,0 +1,13 @@
+{
+  "name": "tempusdominus-bootstrap-4.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"5b3d1258-2368\"",
+    "Last-Modified": "Wed, 04 Jul 2018 18:30:48 GMT",
+    "Content-Type": "text/css"
+  },
+  "_release": "e-tag:W/\"5b3d125",
+  "main": "index.css",
+  "_source": "https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css",
+  "_target": "*",
+  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+}

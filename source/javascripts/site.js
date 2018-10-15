@@ -6,6 +6,8 @@
 //= require smooth-scroll.polyfills.min/index.js
 //= require gsap/src/minified/TweenMax.min.js
 //= require baguettebox.js/src/baguetteBox.js
+//= require moment.min/index.js
+//= require tempusdominus-bootstrap-4.min.js/index.js
 
 
 var scroll = new SmoothScroll('a[href*="#"]');
@@ -18,10 +20,7 @@ $(window).scroll(function() {
 						$('.nav-sticky ul li a').eq(i).addClass('active');
 				}
 		});
-}).scroll();
 
-/* Every time the window is scrolled ... */
-$(window).scroll( function(){
 		/* Check the location of each desired element */
 		$('.hideme').each( function(i){
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight();
@@ -31,8 +30,8 @@ $(window).scroll( function(){
 					$(this).addClass("showImages");
 				}
 		});
-});
-
+		
+}).scroll();
 
 // Animation TwinMax
 
@@ -84,4 +83,21 @@ function animation(){
 $(document).ready(function(){
 	animation();
 	baguetteBox.run('.gallery');
+});
+
+
+$(function () {
+    $('#datetimepicker7').datetimepicker({
+        format: 'L'
+    });
+    $('#datetimepicker8').datetimepicker({
+				format: 'L',
+        useCurrent: false
+    });
+    $("#datetimepicker7").on("change.datetimepicker", function (e) {
+        $('#datetimepicker8').datetimepicker('minDate', e.date);
+    });
+    $("#datetimepicker8").on("change.datetimepicker", function (e) {
+        $('#datetimepicker7').datetimepicker('maxDate', e.date);
+    });
 });
