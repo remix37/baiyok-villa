@@ -3,14 +3,14 @@
   %h1.text-center Nous contacter
 
   .row
-    .col-7.offset-2
+    .col-md-7.offset-md-2
       %form.form-bv
         .row
-          .col
+          .col-6.col-md-12.col-lg-12.col-xl-6
             .form-group
               %input.form-control{:placeholder => "Nom", :type => "text"}/
 
-          .col
+          .col-6.col-md-12.col-lg-12.col-xl-6
             .form-group
               %input.form-control{:placeholder => "Prénom", :type => "text"}/
 
@@ -22,11 +22,11 @@
 
         %a.btn.btn-link.btn-bv{:href => "/"} Envoyer
 
-    .col-3
+    .col-md-3
 
   .row
 
-    .col-5.offset-5
+    .col-md-5.offset-md-5
 
       .informations
 
@@ -37,4 +37,4 @@
           %img.float-left{:src => image_path('envelope.svg')}/
           %a{:href => "mailto:richard.rigault@gmail.com"} richard.rigault@gmail.com
 
-    .col-2
+    .col-md-2

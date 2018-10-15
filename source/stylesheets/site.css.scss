@@ -108,9 +108,7 @@
 .informations {
   background-color: $bv-color;
   padding: 30px 30px 15px;
-  position: relative;
   color: $white;
-  bottom: 30px;
 
   img{
     margin-right: 10px
@@ -123,6 +121,11 @@
 
   a{
     color: $white;
+  }
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    bottom: 30px;
   }
 }
 
