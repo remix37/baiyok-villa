@@ -80,5 +80,5 @@ function animation(){
 }
 
 $(document).ready(function(){
-	// animation();
+	animation();
 });
