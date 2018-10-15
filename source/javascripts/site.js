@@ -38,14 +38,9 @@ function animation(){
 
 	var tl = new TimelineLite();
 
-	tl.from($('.navbar'), 1, {
-		top: '-90px',
-		ease:Power4.easeInOut
-	});
-
 	tl.from($('.nav-sticky'), 1, {
 		autoAlpha: 0
-	}, "-=0.5");
+	});
 
 	tl.from($('.villa'), 1.5, {
 		width: 0,
