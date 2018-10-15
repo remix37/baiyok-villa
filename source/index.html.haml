@@ -16,16 +16,16 @@ title: Baiyok Villa
           .col.align-self-end
 
             .row
-              .col.pl-lg-5
+              .col.pl-lg-5.icon-white
                 %img.icon-bv.float-xl-left{:src => image_path('Icons/100_villa-white.svg')}/
                 .service
                   %p.white Une résidence de 1100 m<sup>2</sup>
 
-              .col
+              .col.icon-white
                 %img.icon-bv.float-xl-left{:src => image_path('Icons/100_swimming-pool-white.svg')}/
                 .service
                   %p.white Piscine à débordement de 100 m<sup>3</sup>
-              .col.pr-lg-5
+              .col.pr-lg-5.icon-white
 
                 %img.icon-bv.float-xl-left{:src => image_path('Icons/100_staff-white.svg')}/
                 .service
@@ -33,7 +33,10 @@ title: Baiyok Villa
 
               .w-100.mt-3
               .col.discover
-                %p.text-right.py-3 Découvrir
+                %p.text-right
+                  %a.btn.btn-link.link-bv{"datascroll" => "", :href => "#Localisation"}  Découvrir
+                  %img{:src => image_path('arrow-down.svg')}/
+
 
       %section#Localisation
         .row

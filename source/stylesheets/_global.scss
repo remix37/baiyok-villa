@@ -62,7 +62,6 @@ section {
 // Button
 
 .btn-bv {
-  font-weight: 500;
   &:before {
     content: "";
     display: inline-block;
@@ -74,4 +73,11 @@ section {
     bottom: 4px;
     margin-left: -60px;
   }
+}
+
+.btn-bv, .link-bv {
+  font-weight: 600;
+  color: $bv-color;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
