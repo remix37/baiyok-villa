@@ -9,6 +9,5 @@
   "main": "index.js",
   "_source": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
   "_target": "*",
-  "_originalSource": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
-  "_direct": true
+  "_originalSource": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
 }

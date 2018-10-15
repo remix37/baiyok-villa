@@ -5,6 +5,8 @@
 //= require boostrap/dist/js/bootstrap.js
 //= require smooth-scroll.polyfills.min/index.js
 //= require gsap/src/minified/TweenMax.min.js
+//= require baguettebox.js/src/baguetteBox.js
+
 
 var scroll = new SmoothScroll('a[href*="#"]');
 
@@ -80,5 +82,6 @@ function animation(){
 }
 
 $(document).ready(function(){
-	animation();
+	// animation();
+	baguetteBox.run('.gallery');
 });

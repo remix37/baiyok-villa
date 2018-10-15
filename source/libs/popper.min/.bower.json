@@ -9,6 +9,5 @@
   "main": "index.js",
   "_source": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js",
   "_target": "*",
-  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js",
-  "_direct": true
+  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
 }
