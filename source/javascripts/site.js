@@ -72,8 +72,7 @@ function animation(){
 
 	tl.staggerFrom($('section:not(#Home), .footer'), 1, {
 		autoAlpha: 0,
-		display: 'none',
-		height: 0
+		display: 'none'
 	}, 0.2 ,"-=0.8");
 
 	// tl.progress(1);
@@ -81,5 +80,5 @@ function animation(){
 }
 
 $(document).ready(function(){
-	animation();
+	// animation();
 });
