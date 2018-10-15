@@ -27,6 +27,8 @@
   padding: 0 30px;
   width: 270px;
   height: 212px;
+
+
 }
 
 .discover{
@@ -126,6 +128,29 @@
   @include media-breakpoint-up(md) {
     position: relative;
     bottom: 30px;
+  }
+}
+
+// Slider
+
+#baguetteBox-overlay {
+  background-color: rgba(255,255,255,.8) !important;
+
+  .full-image img {
+    box-shadow: none;
+  }
+}
+
+.baguetteBox-button{
+  background: none !important;
+  &:hover, &:focus{
+    background: none !important;
+  }
+}
+
+.baguetteBox-button svg {
+  polyline, g{
+    stroke: lighten($black, 25%);
   }
 }
 
