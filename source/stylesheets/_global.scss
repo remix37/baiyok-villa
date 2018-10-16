@@ -81,3 +81,18 @@ section {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
+
+// Input
+
+.form-control {
+  border-bottom: 1px solid $gray;
+}
+
+.input-group-text{
+  border-bottom: 1px solid $gray;
+}
+
+label{
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}

@@ -7,26 +7,67 @@
           %span{"aria-hidden" => "true"} ×
       .modal-body
         .container-fluid
-          .row
-            .col
-              .form-group
-                %input.form-control{:placeholder => "placeholder", :type => "text"}/
 
-        .container-fluid
           .row
             .col
               .form-group
+                %label{:for => "CheckIn"} Début de séjour
                 #datetimepicker7.input-group.date{"data-target-input" => "nearest"}
-                  %input.form-control.datetimepicker-input{"data-target" => "#datetimepicker7", :type => "text"}/
+                  %input.form-control.datetimepicker-input#CheckIn{:placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker7", "data-toggle" => "datetimepicker", :type => "text"}/
                   .input-group-append{"data-target" => "#datetimepicker7", "data-toggle" => "datetimepicker"}
                     .input-group-text
                       %i.fa.fa-calendar
             .col
               .form-group
+                %label{:for => "CheckOut"} Fin de séjour
                 #datetimepicker8.input-group.date{"data-target-input" => "nearest"}
-                  %input.form-control.datetimepicker-input{"data-target" => "#datetimepicker8", :type => "text"}/
+                  %input.form-control.datetimepicker-input#CheckOut{:placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker8", "data-toggle" => "datetimepicker", :type => "text"}/
                   .input-group-append{"data-target" => "#datetimepicker8", "data-toggle" => "datetimepicker"}
                     .input-group-text
                       %i.fa.fa-calendar
+
+            .w-100
+
+            .col
+              .form-group
+                %input.form-control{:placeholder => "Prénom", :type => "text"}/
+
+            .col
+              .form-group
+                %input.form-control{:placeholder => "Nom", :type => "text"}/
+
+            .w-100
+
+            .col
+              .form-group
+                %input.form-control{:placeholder => "Téléphone", :type => "phone"}/
+
+            .col
+              .form-group
+                %input.form-control{:placeholder => "Email", :type => "email"}/
+
+            .w-100
+
+            .col
+              .form-group
+                %select.form-control
+                  %option{:disabled => "", :selected => "selected", :value => ""} Nombre de personne
+                  %option{:value => "1"} 1
+                  %option{:value => "2"} 2
+                  %option{:value => "3"} 3
+                  %option{:value => "4"} 4
+                  %option{:value => "5"} 5
+                  %option{:value => "6"} 6
+                  %option{:value => "7"} 7
+                  %option{:value => "8"} 8
+
+            .w-100
+
+            .col
+              .form-group
+                %textarea.form-control{:placeholder => "Informations supplémentaires", :rows => "3"}
+
+
       .modal-footer
-        %button.btn.btn-link.btn-bv{"data-dismiss" => "modal", :type => "button"} Fermer
+        -# %button.btn.btn-link.btn-bv{"data-dismiss" => "modal", :type => "button"} Fermer
+        %button.btn.btn-link.btn-bv{:type => "button"} Envoyer

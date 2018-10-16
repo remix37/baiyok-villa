@@ -6,7 +6,8 @@
 //= require smooth-scroll.polyfills.min/index.js
 //= require gsap/src/minified/TweenMax.min.js
 //= require baguettebox.js/src/baguetteBox.js
-//= require moment.min/index.js
+//= require moment/min/moment.min.js
+//= require moment/min/moment-with-locales.min.js
 //= require tempusdominus-bootstrap-4.min.js/index.js
 
 
@@ -30,7 +31,7 @@ $(window).scroll(function() {
 					$(this).addClass("showImages");
 				}
 		});
-		
+
 }).scroll();
 
 // Animation TwinMax
@@ -81,16 +82,19 @@ function animation(){
 }
 
 $(document).ready(function(){
-	animation();
+	// animation();
 	baguetteBox.run('.gallery');
 });
 
 
 $(function () {
+
     $('#datetimepicker7').datetimepicker({
+				locale: 'fr',
         format: 'L'
     });
     $('#datetimepicker8').datetimepicker({
+				locale: 'fr',
 				format: 'L',
         useCurrent: false
     });
