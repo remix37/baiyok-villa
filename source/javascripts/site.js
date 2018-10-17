@@ -82,7 +82,11 @@ function animation(){
 }
 
 $(document).ready(function(){
-	// animation();
+
+	if(window.location.hash != '#disable'){
+		animation();
+	}
+
 	baguetteBox.run('.gallery');
 });
 
