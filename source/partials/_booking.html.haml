@@ -8,12 +8,17 @@
       .modal-body
         .container-fluid
 
-          .row
+          %form.row{:action => "https://getsimpleform.com/messages?form_api_token=461f7854117b75a3f540ef9a88b513e2", :method => "post", :enctype => "multipart/form-data"}
+
+            %input{:name => "redirect_to", :type => "hidden", :value => "http://localhost:4567/#thank-you"}/
+            %input{:name => "_folder", :type => "hidden", :value => "quotes"}/
+            %input{:name => "_spam", :type => "hidden", :value => "message"}/
+
             .col
               .form-group
                 %label{:for => "CheckIn"} Début de séjour
                 #datetimepicker7.input-group.date{"data-target-input" => "nearest"}
-                  %input.form-control.datetimepicker-input#CheckIn{:placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker7", "data-toggle" => "datetimepicker", :type => "text"}/
+                  %input.form-control.datetimepicker-input#CheckIn{:name => "Check in", :placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker7", "data-toggle" => "datetimepicker", :type => "text", :required => ""}/
                   .input-group-append{"data-target" => "#datetimepicker7", "data-toggle" => "datetimepicker"}
                     .input-group-text
                       %i.fa.fa-calendar
@@ -21,7 +26,7 @@
               .form-group
                 %label{:for => "CheckOut"} Fin de séjour
                 #datetimepicker8.input-group.date{"data-target-input" => "nearest"}
-                  %input.form-control.datetimepicker-input#CheckOut{:placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker8", "data-toggle" => "datetimepicker", :type => "text"}/
+                  %input.form-control.datetimepicker-input#CheckOut{:name => "Check out", :placeholder => "jj/mm/aaaa", "data-target" => "#datetimepicker8", "data-toggle" => "datetimepicker", :type => "text", :required => ""}/
                   .input-group-append{"data-target" => "#datetimepicker8", "data-toggle" => "datetimepicker"}
                     .input-group-text
                       %i.fa.fa-calendar
@@ -30,27 +35,27 @@
 
             .col
               .form-group
-                %input.form-control{:placeholder => "Prénom", :type => "text"}/
+                %input.form-control{:name => "Name", :placeholder => "Prénom", :type => "text", :required => ""}/
 
             .col
               .form-group
-                %input.form-control{:placeholder => "Nom", :type => "text"}/
+                %input.form-control{:name => "Last name", :placeholder => "Nom", :type => "text", :required => ""}/
 
             .w-100
 
             .col
               .form-group
-                %input.form-control{:placeholder => "Téléphone", :type => "phone"}/
+                %input.form-control{:name => "Phone", :placeholder => "Téléphone", :type => "phone", :required => ""}/
 
             .col
               .form-group
-                %input.form-control{:placeholder => "Email", :type => "email"}/
+                %input.form-control{:name => "Email", :placeholder => "Email", :type => "email", :required => ""}/
 
             .w-100
 
             .col
               .form-group
-                %select.form-control
+                %select.form-control{:name => "People", :required => ""}
                   %option{:disabled => "", :selected => "selected", :value => ""} Nombre de personne
                   %option{:value => "1"} 1
                   %option{:value => "2"} 2
@@ -65,9 +70,6 @@
 
             .col
               .form-group
-                %textarea.form-control{:placeholder => "Informations supplémentaires", :rows => "3"}
+                %textarea.form-control{:name => "Message", :placeholder => "Informations supplémentaires", :rows => "3"}
 
-
-      .modal-footer
-        -# %button.btn.btn-link.btn-bv{"data-dismiss" => "modal", :type => "button"} Fermer
-        %button.btn.btn-link.btn-bv{:type => "button"} Envoyer
+              %button.btn.btn-link.btn-bv{:type => "Submit"} Envoyer

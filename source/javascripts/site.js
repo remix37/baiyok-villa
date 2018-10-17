@@ -83,7 +83,11 @@ function animation(){
 
 $(document).ready(function(){
 
-	if(window.location.hash != '#disable'){
+	if(window.location.hash == '#thank-you'){
+		$('#thank-you').removeClass('d-none');
+		$('.thank-you-message').removeClass('hide').addClass('show');
+		$('.top-content').addClass('pt-4');
+	}else if(window.location.hash != '#disable'){
 		animation();
 	}
 

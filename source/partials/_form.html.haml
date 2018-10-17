@@ -4,23 +4,29 @@
 
   .row
     .col-md-7.offset-md-2
-      %form.form-bv
+
+      %form.form-bv{:action => "https://getsimpleform.com/messages?form_api_token=461f7854117b75a3f540ef9a88b513e2", :method => "post", :enctype => "multipart/form-data"}
+
+        %input{:name => "redirect_to", :type => "hidden", :value => "http://localhost:4567/#thank-you"}/
+        %input{:name => "_folder", :type => "hidden", :value => "quotes"}/
+        %input{:name => "_spam", :type => "hidden", :value => "message"}/
+
         .row
           .col-12.col-sm-6.col-md-12.col-lg-12.col-xl-6
             .form-group
-              %input.form-control{:placeholder => "Nom", :type => "text"}/
+              %input.form-control{:name => "Name", :placeholder => "Prénom", :type => "text", :required => ""}/
 
           .col-12.col-sm-6.col-md-12.col-lg-12.col-xl-6
             .form-group
-              %input.form-control{:placeholder => "Prénom", :type => "text"}/
+              %input.form-control{:name => "Last name", :placeholder => "Nom", :type => "text", :required => ""}/
 
         .form-group
-          %input.form-control{:placeholder => "Email", :type => "email"}/
+          %input.form-control{:name => "Mail", :placeholder => "Email", :type => "email", :required => ""}/
 
         .form-group
-          %textarea.form-control{:placeholder => "Message", :rows => "3"}
+          %textarea.form-control{:name => "Message", :placeholder => "Message", :rows => "3"}
 
-        %a.btn.btn-link.btn-bv{:href => "/"} Envoyer
+        %button.btn.btn-link.btn-bv{:type => "Submit"} Envoyer
 
     .col-md-3
 

@@ -3,12 +3,23 @@ title: Baiyok Villa
 ---
 
 .container
+
   .row
 
     = partial "partials/nav-sticky.html.haml"
 
-    .col
+    .col.top-content
+
+      .row.sticky-top#thank-you.d-none
+        .col.px-sm-0
+          .thank-you-message.alert.alert-success.alert-dismissible.fade.hide{:role => "alert"}
+            Merci de m'avoir contacté, je vous répondrai dès que possible.
+            %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+
+
       %section#Home
+
         .row.villa
           .col-md-auto.align-self-end.big-title
             %h1.text-right Une villa luxueuse vue sur mer
