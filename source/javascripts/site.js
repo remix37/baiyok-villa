@@ -6,8 +6,8 @@
 //= require smooth-scroll.polyfills.min/index.js
 //= require gsap/src/minified/TweenMax.min.js
 //= require baguettebox.js/src/baguetteBox.js
-//= require moment/min/moment.min.js
-//= require moment/min/moment-with-locales.min.js
+//= require moment.min/index.js
+//= require moment-with-locales.min/index.js
 //= require tempusdominus-bootstrap-4.min.js/index.js
 
 
