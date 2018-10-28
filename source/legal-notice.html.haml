@@ -1,0 +1,14 @@
+.container
+  .row
+    .col
+      %ul.nav.nav-tabs.mt-5{:role => "tablist"}
+        %li.nav-item
+          %a#french-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#french", :role => "tab"} Français
+        %li.nav-item
+          %a#english-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#english", :role => "tab"} English
+
+      .tab-content
+        #french.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"}
+          = partial "partials/legal-notice-fr.html.haml"
+        #english.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"}
+          = partial "partials/legal-notice-en.html.haml"
