@@ -66,11 +66,22 @@ function animation(){
 		display: 'none'
 	}, '#final' ,"-=0.8");
 
-	tl.from($('.cc-cookies'), 1, {
-		autoAlpha: 0
+	tl.from($('.cc-cookies'), 0.8, {
+		'padding-top': 0,
+		'padding-bottom': 0,
+		height: 0,
+		display: 'none',
+		autoAlpha: 0,
+		ease:Power4.easeOut
 	}, '#final');
 
-	// tl.progress(1);
+	tl.from($('.cc-cookies .cc-cookies-inner'), 0.3, {
+		autoAlpha: 0,
+		ease:Power4.easeOut
+	}, "-=0.5");
+
+
+	// tl.progress(0.8);
 
 }
 

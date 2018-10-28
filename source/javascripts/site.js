@@ -38,11 +38,14 @@ $(document).ready(function(){
       $('#datetimepicker7').datetimepicker('maxDate', e.date);
   });
 
+
 	$.cookieCuttr({
 		cookieAnalytics: false,
 		cookiePolicyLink: '/legal-notice',
 		cookieMessage: 'Nous utilisons des cookies sur ce site, vous pouvez <a href="{{cookiePolicyLink}}" title="read about our cookies">en savoir plus ici</a>. Pour utiliser le site comme prévu, veuillez&nbsp;',
 		cookieAcceptButtonText: "accepter les cookies"
 	});
+
+  $( ".cc-cookies" ).wrapInner( "<p class='cc-cookies-inner'></p>");
 
 });
