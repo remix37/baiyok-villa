@@ -61,11 +61,27 @@ function animation(){
 		autoAlpha: 0
 	});
 
-	tl.staggerFrom($('section:not(#Home), .footer'), 1, {
+	tl.from($('section:not(#Home), .footer'), 1, {
 		autoAlpha: 0,
 		display: 'none'
-	}, 0.2 ,"-=0.8");
+	}, '#final' ,"-=0.8");
+
+	tl.from($('.cc-cookies'), 1, {
+		autoAlpha: 0
+	}, '#final');
 
 	// tl.progress(1);
 
 }
+
+$(document).ready(function(){
+
+  if(window.location.hash == '#thank-you'){
+    $('#thank-you').removeClass('d-none');
+    $('.thank-you-message').removeClass('hide').addClass('show');
+    $('.top-content').addClass('pt-4');
+  }else if(window.location.hash != '#disable'){
+    animation();
+  }
+
+});
