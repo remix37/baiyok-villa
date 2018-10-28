@@ -2,7 +2,6 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :livereload
-activate :i18n
 activate :directory_indexes
 
 activate :autoprefixer do |prefix|

@@ -1,4 +1,4 @@
-//= require jquery/dist/jquery.js
+//= require jquery/index.js
 //= require jquery.cookie/jquery.cookie.js
 //= require cookiecuttr/jquery.cookiecuttr.js
 //= require popper.min/index.js
