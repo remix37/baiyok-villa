@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    / Use the title from a page's frontmatter if it has one
+    %title= current_page.data.title || "Baiyok Villa"
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.4.1/css/all.css", :integrity => "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz", :rel => "stylesheet"}/
+    = stylesheet_link_tag "site"
+  %body
+
+    = partial "partials/header.html.haml"
+
+    = yield
+
+    = partial "partials/booking.html"
+    = partial "partials/footer.html.haml"
+
+    = javascript_include_tag "site"
+    = javascript_include_tag "gallery"
