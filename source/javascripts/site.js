@@ -48,4 +48,8 @@ $(document).ready(function(){
 
   $( ".cc-cookies" ).wrapInner( "<p class='cc-cookies-inner'></p>");
 
+  var scroll = new SmoothScroll('a[href*="#"]',{
+    speed: 1000
+  });
+
 });

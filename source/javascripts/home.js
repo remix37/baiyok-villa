@@ -91,7 +91,7 @@ $(document).ready(function(){
     $('#thank-you').removeClass('d-none');
     $('.thank-you-message').removeClass('hide').addClass('show');
     $('.top-content').addClass('pt-4');
-  }else if(window.location.hash != '#disable'){
+  }else if(window.location.hash != '#Home'){
     animation();
   }
 
