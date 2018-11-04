@@ -14,5 +14,10 @@
           %button.btn.btn-link.nav-link{"data-toggle" => "modal", "data-target" => "#Booking"}
             Demande de réservation
         %li.nav-item
-          %a.nav-link{"datascroll" => "", :href => "#contact"}
-            Contact
+
+          - if current_page.url == "/legal-notice/" || current_page.url == "/contact/"
+            %a.nav-link{"datascroll" => "", :href => "/contact"}
+              Contact
+          - else
+            %a.nav-link{"datascroll" => "", :href => "#contact"}
+              Contact
